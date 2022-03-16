@@ -1,0 +1,98 @@
+.layerBlack{
+    background: rgb(190, 139, 43);
+    border: 10px black solid;
+    margin: 10px;   
+}
+
+.redBoxContainer {  
+    display: flex;
+}
+
+
+.redBox{
+    background: rgb(223, 94, 66);
+    border: 10px rgb(63, 63, 87) solid;
+    height:10px;
+    flex-grow:1;
+      
+}
+
+.redBoxMidle{
+    border-left: 0px;
+    border-right: 0px;
+    flex-grow: 4;
+}
+
+.blackLine{
+    border: 2px black solid;
+}
+
+.orangeBox{
+    background: rgb(211, 171, 40);
+    border: 10px rgba(255, 119, 0, 0.694) solid;  
+    height: 10px;
+  
+    
+}
+
+.layerBlackMiddle{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.leftBoxContainer{
+    background:rgb(88, 87, 107);
+    border-right: 5px solid rgb(88, 87, 107);
+    border-left: 5px solid rgb(88, 87, 107);
+    flex-grow: 2;   
+
+ }
+
+.blueBoxTop{
+    display: flex;
+    
+}    
+.blueBoxBottom{
+    display: flex;
+}
+.blueBox{
+    background: rgb(66, 82, 223);
+    height: 10px;
+    flex-grow: 1;
+    margin:10px  5px 0 5px;
+}
+
+.lightBlueBox{
+    background: rgb(66, 186, 223);
+    height: 10px;
+    margin:10px 5px 10px 5px;
+
+     
+    
+}
+.rightBoxContainer{
+    background:rgb(214, 26, 92);
+    border-left: 10px solid black;
+    padding-top: 5px;
+    flex-grow: 1;
+}
+
+.yelowBox{
+    background: yellow;
+    height: 10px;
+    flex-grow: 1;
+    margin:5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+.layerBlackBottom{
+    height: 10px;
+}
