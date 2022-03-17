@@ -1,4 +1,4 @@
-.layerBlack{
+.layerBlackTop{
     background: rgb(190, 139, 43);
     border: 10px black solid;
     margin: 10px;   
@@ -36,6 +36,9 @@
 }
 
 .layerBlackMiddle{
+    background: rgb(190, 139, 43);
+    border: 10px black solid;
+    margin: 10px; 
     display: flex;
     flex-direction: row;
     
@@ -49,28 +52,26 @@
 
  }
 
-.blueBoxTop{
+.blueBoxTopContainer{
     display: flex;
     
 }    
-.blueBoxBottom{
+.blueBoxBottomContainer{
     display: flex;
 }
 .blueBox{
-    background: rgb(66, 82, 223);
+    background: rgb(37, 103, 153);
     height: 10px;
     flex-grow: 1;
     margin:10px  5px 0 5px;
 }
 
 .lightBlueBox{
-    background: rgb(66, 186, 223);
+    background: rgb(74, 137, 156);
     height: 10px;
-    margin:10px 5px 10px 5px;
-
-     
-    
+    margin:10px  5px 10px 5px;  
 }
+
 .rightBoxContainer{
     background:rgb(214, 26, 92);
     border-left: 10px solid black;
@@ -79,7 +80,7 @@
 }
 
 .yelowBox{
-    background: yellow;
+    background: rgb(241, 218, 41);
     height: 10px;
     flex-grow: 1;
     margin:5px;
@@ -88,11 +89,65 @@
 }
 
 
-
-
-
-
-
 .layerBlackBottom{
+    background: rgb(190, 139, 43);
+    border: 10px black solid;
+    margin: 10px; 
     height: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .layerBlackMiddle{
+        border: 10px yellow solid;
+        flex-direction: column;
+        
+    }
+    .rightBoxContainer{
+        border-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+       
+    
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .redBoxContainer {  
+        flex-direction: column;
+    }
+
+    .redBoxMidle{
+        border: 10px rgb(63, 63, 87) solid;
+        flex-grow:1;
+      
+    }
+    .blueBoxTopContainer{
+        flex-direction: column;  
+    } 
+
+    .blueBoxBottomContainer{
+        flex-direction: column; 
+    }
+    .rightBoxContainer{
+        background:rgb(231, 103, 5);
+        padding-top: 5px;
+        flex-grow: 1;
+    }
+
+    .yelowBox{
+        background: rgb(241, 168, 41);
+        height: 10px;
+        flex-grow: 1;
+        margin:5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+
+}
+
+
 }
