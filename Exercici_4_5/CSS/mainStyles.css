@@ -14,7 +14,7 @@ header{
    background-size:cover;
    margin: 4%;
    display: flex; 
-   flex-direction: column;/* it does not work if I skip it!   */
+   flex-direction: column;
    justify-content:space-evenly;
    align-items:center;  
 }
@@ -28,7 +28,7 @@ nav {
     align-items: center;
     
 }
- .logo{
+.logo{
     background-image: url(../img/favicon/favicon.ico);
     background-repeat: no-repeat;
     background-position: center;
@@ -36,9 +36,10 @@ nav {
     height:80%;
     width: 15%;        
 }
-.centralNavMenu{
+ul{
     height:33%;
-    width: 60%;   
+    width: 60%; 
+    list-style: none;  
     display: flex;
     justify-content: space-evenly;
     align-items: center;  
@@ -76,8 +77,7 @@ nav {
     text-align: center;
     color: rgb(167, 22, 6);  
 } 
-.layerBlackMiddle{
-    
+main{ 
    height:36.7%;
    background: black;
    margin-left: 4%;
@@ -85,50 +85,30 @@ nav {
    display: flex; 
    justify-content: space-evenly;
    align-items: center;
-    
 }
-
- .leftBoxContainer{
+ section{
     height: 77.77%;
     width:65%;
     background:rgb(88, 87, 107);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-     
-
- }
-
-.blueBoxTopContainer{
-    height: 13%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    
-}    
-.blueBoxBottomContainer{
-    height: 13%;
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
 }
 
-.blueBox{
-    height: 100%;
+article{
+    height: 13%;
     width:43%;
-    background: rgb(37, 103, 153);
-    
+    background: rgb(37, 103, 153);   
 }
-
 .lightBlueBox{
-    background: rgb(74, 137, 156);
     height: 13%;
     width: 91%;
+    background: rgb(74, 137, 156);
       
 }
 
-.rightBoxContainer{
+aside{
     height: 77.77%;
     width:25%;
     background:rgb(214, 26, 92);
@@ -138,19 +118,15 @@ nav {
     
 }
 
-.yelowBox{
+aside p{
     background: rgb(241, 218, 41);
     height: 13%;
     width: 80%;
     position: relative;
     top:11%;
-    margin:3%;
-   
-    
+    margin:3%;   
 }
- 
-
-.layerBlackBottom{
+footer{
 
     height:12.25%;
     background: black;
@@ -158,11 +134,9 @@ nav {
     display: flex; 
     flex-direction: column;/* it does not work if I skip it!   */
     justify-content: center;
-    align-items: center;
-    
-  
+    align-items: center;  
 }
-.boxBottom{
+footer p{
     background: rgb(190, 139, 43);
     height:33%;
     width:95%;
@@ -182,18 +156,25 @@ nav {
     .frase {
         font-size: 1.5rem;
     } 
-    .layerBlackMiddle{
+    main{
         height: 48%;
         background: yellow;
         flex-direction: column;
     }
-    .leftBoxContainer{
+    section{
         height: 48.2%;
         width:95%;
         
     
      }
-     .yelowBox{
+
+     aside{
+        height: 31%;
+        width:95%;
+        justify-content: center;   
+    }
+   
+     aside p{
         background: rgb(241, 218, 41);
         height: 22%;
         width: 90%;  
@@ -201,15 +182,9 @@ nav {
         margin: 1%;   
     }
 
-     .rightBoxContainer{
-        height: 31%;
-        width:95%;
-        justify-content: center;   
-    }
-   
 
    
-    .layerBlackBottom{
+    footer{
 
         height:10%;
     }
@@ -236,7 +211,7 @@ nav {
         width: 90%;    
     }
 
-    .centralNavMenu{
+    ul{
         height:15.25%;
         width: 90%;        
     } 
@@ -255,58 +230,32 @@ nav {
         font-size: 1.2rem;
     }
 
-    .layerBlackMiddle{
+    main{
         height: 48%;
     }
 
-
-    .leftBoxContainer{
+    section{
         height: 60%;
         width:90%;
         justify-content: space-evenly;     
-    
      }
-     .blueBoxTopContainer{
-        /* background: red; */
-        height: 36.36%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-        
-    }    
-    .blueBoxBottomContainer{
-        /* background: black; */
-        height: 36.36%;
-        width:100%;
-        display: flex;
-        justify-content:space-around;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-    .blueBox{
-        height: 25%;
+
+    article{
+        height: 9%;
         width:91%;
-        /* margin-bottom: 6%; */
-      
     }
     
     .lightBlueBox{
         height: 9%;
         width: 91%;
-
     }
 
-    .rightBoxContainer{
+    aside{
         height: 24.3%;
         width:90%;
-        
     }
 
-    .layerBlackBottom{
+    footer{
         height:7.8%;
     }
     

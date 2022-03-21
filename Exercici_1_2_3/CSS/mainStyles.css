@@ -196,17 +196,12 @@ body{
         justify-content: center;   
     }
    
-
-   
+ 
     .layerBlackBottom{
 
         height:10%;
-    }
-   
-       
-    
+    }      
 }
-
 
 @media only screen and (max-width: 767px) {
  
