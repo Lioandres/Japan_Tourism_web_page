@@ -12,7 +12,8 @@ header{
    background-repeat: no-repeat;
    background-position:center;
    background-size:cover;
-   margin: 1%;
+   margin-left: 1%;
+   margin-right: 1%;
    display: flex; 
    flex-direction: column;
    justify-content:space-evenly;
@@ -74,17 +75,18 @@ ul{
   
  
 main{ 
-   height:140%;
+   height:100%;
    background:white;
    margin-left: 1%;
    margin-right: 1%;
    display: flex; 
-   justify-content: space-evenly;
+   justify-content:space-between;
    align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
 }
  section{
     height: 98%;
-    width:72%;
+    width:78%;
     background:rgb(202, 200, 200);
     display: flex;
     flex-wrap: wrap;
@@ -96,77 +98,85 @@ article{
     width:47%;
     background:rgb(247, 245, 245);
     padding: 1%;   
+       
 }
-.pics{
+.picContainer{
+    position: relative;
+}
+.picContainer img{
     width: 100%;
+}
+.picContainer p{
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    color: rgb(212, 212, 27);
 }
 .titleArticle{ 
     background:rgb(221, 108, 127);
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.5em;
     margin: 0%;
 }
 .text{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     color:gray;
     margin: 0%;
+    overflow: hidden;
 }
 
 .readMore{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85em;
     color:gray;
-   
+    overflow: hidden;
 
 }
-.lightBlueBox{
+section footer{
     height: 5%;
-    width: 91%;
-    background: rgb(74, 137, 156);
-      
+    width: 100%;
+    background-color:transparent;
+    font-size: 0.85em;
+    font-weight:bold;
+    text-align: center;
 }
 
 aside{
     height: 98%;
-    width:24%;
-    background:rgb(214, 26, 92);
+    width:20%;
+    background:rgb(202, 200, 200);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+footer{
+    height:3%;
+    background:rgb(202, 200, 200);
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    background:rgb(247, 245, 245);
+    width: 98%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.85em;
     
 }
 
-aside p{
-    background: rgb(241, 218, 41);
-    height: 13%;
-    width: 80%;
-    position: relative;
-    top:11%;
-    margin:3%;   
-}
-footer{
-
-    height:2%;
-    background: black;
-    margin: 1%;
-    display: flex; 
-    flex-direction: column;/* it does not work if I skip it!   */
-    justify-content: center;
-    align-items: center;  
-}
-footer p{
-    background: rgb(190, 139, 43);
-    height:33%;
-    width:95%;
-}
 
 
 
 
-
- @media only screen and (max-width: 1023px) {
+ /* @media only screen and (max-width: 1023px) {
 
     
     header{
@@ -265,7 +275,7 @@ footer p{
         width:91%;
     }
     
-    .lightBlueBox{
+    .section footer{
         height: 9%;
         width: 91%;
     }
@@ -279,4 +289,4 @@ footer p{
         height:7.8%;
     }
     
-}
+} */
