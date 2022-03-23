@@ -1,10 +1,3 @@
-/* En Objetos vacios:
-1-Respecto  al ancho :Ancho del padre si se usa flex-grow:1,O se define una dimension (mejor % del padre) ó se le asigna un margen
-2-Respecto a la altura:No tiene altura!!!!  si o si una dimension (mejor%) ó margen 
-3-Respecto al margen vs. flexBox: Antes de poner un margen a un elemeento preguntarse si ese elemento está contenido en un padre y si no es más simple trabajar con los comandos de distribucion del felxBos desde el padre (lease justify-content or align-items, etc) 
--El margen se hereda?*/
-
-
 html{
     height: 100%;
 }
@@ -85,34 +78,17 @@ body{
     width:65%;
     background:rgb(88, 87, 107);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-     
-
+    align-items: center; 
  }
 
-.blueBoxTopContainer{
-    height: 13%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    
-}    
-.blueBoxBottomContainer{
-    height: 13%;
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .blueBox{
-    height: 100%;
+    height: 13%;
     width:43%;
     background: rgb(37, 103, 153);
     
 }
-
 .lightBlueBox{
     background: rgb(74, 137, 156);
     height: 13%;
@@ -148,7 +124,7 @@ body{
     background: black;
     margin: 4%;
     display: flex; 
-    flex-direction: column;/* it does not work if I skip it!   */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -242,35 +218,13 @@ body{
     .leftBoxContainer{
         height: 60%;
         width:90%;
-        justify-content: space-evenly;     
+        justify-content: space-around;     
     
      }
-     .blueBoxTopContainer{
-        /* background: red; */
-        height: 36.36%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-        
-    }    
-    .blueBoxBottomContainer{
-        /* background: black; */
-        height: 36.36%;
-        width:100%;
-        display: flex;
-        justify-content:space-around;
-        flex-direction: column;
-        align-items: center;
-        
-    }
     
     .blueBox{
-        height: 25%;
+        height: 9%;
         width:91%;
-        /* margin-bottom: 6%; */
-      
     }
     
     .lightBlueBox{
