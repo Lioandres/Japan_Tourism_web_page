@@ -1,24 +1,93 @@
-
-
-
-
-
-
-.colors {
-    background: rgb(190, 139, 43);  
-    background: rgb(223, 94, 66);
-    border: 10px rgb(63, 63, 87) solid;
-    border: 2px black solid;
-    background: rgb(211, 171, 40);
-    border: 10px rgba(255, 119, 0, 0.694);
-    background: rgb(190, 139, 43);
-    background: rgb(88, 87, 107);
-    background: rgb(37, 103, 153);
-    background: rgb(74, 137, 156);
-    background: rgb(214, 26, 92);
-    background: rgb(190, 139, 43);
-    border: 10px black solid;
-    border: 10px rgb(63, 63, 87) solid;
-    background: rgb(231, 103, 5);
-    background: rgb(241, 168, 41);
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+     
 }
+body{
+    display: flex;
+    flex-flow: column nowrap ;
+}
+header{
+    background:black;
+    flex-flow: column nowrap;
+}
+    .navMenu{
+        background:rgb(63, 63, 87);
+        display: flex;
+    }
+        .logo{
+            background: rgb(223, 94, 66);
+            flex:1 1 auto;
+        }
+        .menu{
+            background: rgb(223, 94, 66);
+            flex:5 1 auto;
+        }
+        .social{
+            background: rgb(223, 94, 66);
+            flex:1 1 auto;
+        }
+    .mainTextContainer{
+        background:  rgba(255, 119, 0, 0.694);
+    }
+        .mainText{
+            background: rgb(211, 171, 40);
+        }
+section{
+    background: black;
+    display: flex;
+}
+    .articles{
+        background: rgb(88, 87, 107);
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+        
+    }
+        article{
+            background: rgb(37, 103, 153);
+            flex: 1 1 40%;
+        }
+        .articleFooter{
+            background: rgb(74, 137, 156); 
+            flex: 1 1 100%;
+        }
+    aside{
+        background: rgb(214, 26, 92);
+        flex: 1 1 auto;
+    }
+        .something{
+            background:rgb(241, 218, 36);
+        }
+        .somethingText{
+            background: rgb(241, 218, 36);
+        }
+footer{
+    background: black;
+}
+    .navFooter{
+        background: rgb(190, 139, 43);
+     }
+
+     @media only screen and (max-width: 767px){
+
+        section{
+            flex-direction: column;
+            background:yellow;
+        }
+
+     }
+
+     @media only screen and (max-width: 767px) {
+        .navMenu{
+            flex-direction: column;
+        }
+        article{
+            flex: 1 1 100%;
+        }
+    }
+
+     
+     
