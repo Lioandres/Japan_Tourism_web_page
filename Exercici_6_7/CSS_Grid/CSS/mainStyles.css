@@ -1,0 +1,88 @@
+body > * {
+    background-color: red;
+    padding: 10px;
+    font-size: 3em;
+    text-align: center;
+    
+
+}
+
+body{
+    display:grid;
+    grid-gap:1%;
+    grid-template-areas:
+git pull    "header"
+    "main"
+    "footer";
+}
+
+
+
+
+header{
+    grid-area:header;
+    display:grid;
+    grid-template-areas: 
+    "nav"
+    "frase";
+}
+
+nav{
+    grid-area:nav;
+    display:grid;
+    border: black 1px solid;
+    grid-template-areas: 
+        "icon menu menu menu social"; 
+}
+/* nav:first-child{
+    grid-area:icon;
+    border: black 1px solid;
+}
+
+nav:nth-child(2){
+    grid-area: menu;
+    border: black 1px solid;
+}
+
+nav:last-child{
+    grid-area: social;
+    border: black 1px solid;
+} */
+
+header:last-child{
+    border: black 1px solid;
+    grid-area: frase;
+}
+
+
+
+
+
+
+main{
+    grid-area:main;
+    display:grid;
+    grid-gap:1%;
+    grid-template-areas: 
+    "section section section aside";
+}
+
+section{
+    grid-area: section;
+}
+aside{
+    grid-area:aside;
+}
+
+
+
+
+
+
+
+
+footer{
+    grid-area: footer;
+    
+}
+

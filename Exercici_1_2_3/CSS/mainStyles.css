@@ -1,246 +1,93 @@
-html{
-    height: 100%;
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+     
 }
 body{
-    height:100%;
-    margin: 0%;       
-}
-
-.layerBlackTop{
-   height:34.7%;
-   background: black;
-   margin: 4%;
-   display: flex; 
-   flex-direction: column;/* it does not work if I skip it!   */
-   justify-content:space-evenly;
-   align-items:center;  
-}
-
-.redBoxContainer {  
-    height: 35%;
-    width:95%;
-    background: rgb(63, 63, 87);
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    position: relative;
-    top:2%;
-   
+    flex-flow: column nowrap ;
 }
- .redBox{
-    background: rgb(223, 94, 66);
-    height:33%;
-    width: 15%;     
-      
+header{
+    background:black;
+    flex-flow: column nowrap;
 }
-
-.redBoxMidle{
-    background: rgb(223, 94, 66);
-    height:33%;
-    width: 60%;        
-} 
-
-.orangeBoxContainer{
-    
-    background:  rgba(255, 119, 0, 0.694);  
-    height: 35%;   
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top:-2%;
-   
-}
-
-.orangeBox{
-    background: rgb(211, 171, 40);
-    height:33%;
-    width: 95%;
-   
-    
-} 
-
-.layerBlackMiddle{
-    
-   height:36.7%;
-   background: black;
-   margin-left: 4%;
-   margin-right: 4%;
-   display: flex; 
-   justify-content: space-evenly;
-   align-items: center;
-    
-}
-
- .leftBoxContainer{
-    height: 77.77%;
-    width:65%;
-    background:rgb(88, 87, 107);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; 
- }
-
-.blueBox{
-    height: 13%;
-    width:43%;
-    background: rgb(37, 103, 153);
-    
-}
-.lightBlueBox{
-    background: rgb(74, 137, 156);
-    height: 13%;
-    width: 91%;
-      
-}
-
-.rightBoxContainer{
-    height: 77.77%;
-    width:25%;
-    background:rgb(214, 26, 92);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.yelowBox{
-    background: rgb(241, 218, 41);
-    height: 13%;
-    width: 80%;
-    position: relative;
-    top:11%;
-    margin:3%;
-   
-    
-}
- 
-
-.layerBlackBottom{
-
-    height:12.25%;
+    .navMenu{
+        background:rgb(63, 63, 87);
+        display: flex;
+    }
+        .logo{
+            background: rgb(223, 94, 66);
+            flex:1 1 auto;
+        }
+        .menu{
+            background: rgb(223, 94, 66);
+            flex:5 1 auto;
+        }
+        .social{
+            background: rgb(223, 94, 66);
+            flex:1 1 auto;
+        }
+    .mainTextContainer{
+        background:  rgba(255, 119, 0, 0.694);
+    }
+        .mainText{
+            background: rgb(211, 171, 40);
+        }
+section{
     background: black;
-    margin: 4%;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  
+    display: flex;
 }
-.boxBottom{
-    background: rgb(190, 139, 43);
-    height:33%;
-    width:95%;
-}
+    .articles{
+        background: rgb(88, 87, 107);
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
 
-
-
-
-
- @media only screen and (max-width: 1023px) {
-
-    
-    .layerBlackTop{
-        height:28.3%;
-    } 
-
-    .layerBlackMiddle{
-        height: 48%;
-        background: yellow;
-        flex-direction: column;
-    }
-    .leftBoxContainer{
-        height: 48.2%;
-        width:95%;
-        
-    
-     }
-     .yelowBox{
-        background: rgb(241, 218, 41);
-        height: 22%;
-        width: 90%;  
-        top: 0%;
-        margin: 1%;   
-    }
-
-     .rightBoxContainer{
-        height: 31%;
-        width:95%;
-        justify-content: center;   
-    }
-   
- 
-    .layerBlackBottom{
-
-        height:10%;
-    }      
-}
-
-@media only screen and (max-width: 767px) {
- 
-    .layerBlackTop{
-        height:33.76%;
-    }  
-
-    .redBoxContainer {  
-        height: 53%;
-        width:90%;
-        position:static;
-        flex-direction: column; 
-    }
-    .redBox{
-        height:15.25%;
-        width: 90%;    
-    }
-    
-    .redBoxMidle{
-        height:14.25%;
-        width: 90%;        
-    } 
-    .orangeBoxContainer{ 
-        height: 23%;   
-        width: 90%;
-        position:static;
-    }
-
-    .orangeBox{
-        width: 90%;   
-    } 
-
-    .layerBlackMiddle{
-        height: 48%;
-    }
-
-
-    .leftBoxContainer{
-        height: 60%;
-        width:90%;
-        justify-content: space-around;     
-    
-     }
-    
-    .blueBox{
-        height: 9%;
-        width:91%;
-    }
-    
-    .lightBlueBox{
-        height: 9%;
-        width: 91%;
-
-    }
-
-    .rightBoxContainer{
-        height: 24.3%;
-        width:90%;
         
     }
-
-    .layerBlackBottom{
-        height:7.8%;
+        article{
+            background: rgb(37, 103, 153);
+            flex: 1 1 40%;
+        }
+        .articleFooter{
+            background: rgb(74, 137, 156); 
+            flex: 1 1 100%;
+        }
+    aside{
+        background: rgb(214, 26, 92);
+        flex: 1 1 auto;
     }
-    
+        .something{
+            background:rgb(241, 218, 36);
+        }
+        .somethingText{
+            background: rgb(241, 218, 36);
+        }
+footer{
+    background: black;
 }
+    .navFooter{
+        background: rgb(190, 139, 43);
+     }
+
+     @media only screen and (max-width: 1023px){
+
+        section{
+            flex-direction: column;
+            background:yellow;
+        }
+
+     }
+
+     @media only screen and (max-width: 767px) {
+        .navMenu{
+            flex-direction: column;
+        }
+        article{
+            flex: 1 1 100%;
+        }
+    }
+
+     
+     
