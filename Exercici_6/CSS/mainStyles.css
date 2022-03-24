@@ -131,7 +131,7 @@ article{
     position: relative;
 }
 .picContainer img{
-    height: 280px;
+    width:100%;
 }
 .picContainer p{
     position: absolute;
